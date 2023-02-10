@@ -68,3 +68,8 @@ Step 5: access the nodejs application from browser
     docker build -t my-app:1.0 .       
     
 The dot "." at the end of the command denotes location of the Dockerfile.
+
+#### command to login to vm machine in mac created by docker
+    docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
+
+**Note**: *then go to /var/lib/docker to check volumes [volumes are created in docker to make data presistant even when container is shut dowm -- dir/folder in hosts physical file system is mounted to dir/folder in dockers Virtual file system]*
