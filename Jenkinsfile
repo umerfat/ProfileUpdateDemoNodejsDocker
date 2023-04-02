@@ -22,4 +22,20 @@ pipeline {
     }
     
   }
+  
+  post {
+    
+    always {
+      echo "Executes always"
+    }
+    
+    success {
+      echo "Executes incase of build success"
+    }
+    
+    failure {
+      echo "Executes incase of build failure"
+    }
+  }
+  
 }
