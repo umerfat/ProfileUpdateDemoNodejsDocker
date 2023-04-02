@@ -52,7 +52,7 @@ pipeline {
       steps {
         echo "Deploying application"
         echo "Deploying with credentails ${SERVER_CREDENTIALS}"
-        echo "Deploy version ${params.VERSION}"
+        echo "Deploy version as: ${params.VERSION}"
         // we can use wrappers as well to fetch Jenkins Credentials
 //         withCredentials([
 //           usernamePassword(credentials: 'umerfat', userVariable:USER, passwordVaraible:PWD)
