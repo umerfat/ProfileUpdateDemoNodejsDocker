@@ -38,11 +38,11 @@ pipeline {
         echo "Deploying application"
         echo "Deploying with credentails ${SERVER_CREDENTIALS}"
         // we can use wrappers as well to fetch Jenkins Credentials
-        withCredentials([
-          usernamePassword(credentials: 'umerfat', userVariable:USER, passwordVaraible:PWD)
-        ]) {
-          echo "some script ${USER} ${PWD}"
-        }
+//         withCredentials([
+//           usernamePassword(credentials: 'umerfat', userVariable:USER, passwordVaraible:PWD)
+//         ]) {
+//           echo "some script ${USER} ${PWD}"
+//         }
       }
     }
     
